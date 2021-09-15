@@ -1,7 +1,18 @@
 <template>
-  <h1>Template</h1>
+  <div class="site">
+    <TheNavigation></TheNavigation>
+  </div>
 </template>
 
 <script>
-export default {}
+import TheNavigation from "../components/TheNavigation";
+export default {
+  components: {TheNavigation}
+}
 </script>
+
+<style scoped>
+.site {
+  height: 300vh;
+}
+</style>
