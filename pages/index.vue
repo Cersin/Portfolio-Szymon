@@ -1,7 +1,10 @@
 <template>
-  <h1>Template</h1>
+  <div class="site">
+
+  </div>
 </template>
 
-<script>
-export default {}
-</script>
+<style scoped>
+.site {
+}
+</style>
