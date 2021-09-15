@@ -6,6 +6,5 @@
 
 <style scoped>
 .site {
-  height: 300vh;
 }
 </style>

@@ -1,8 +1,8 @@
 <template>
   <div>
     <TheNavigation></TheNavigation>
-    <TheNavToggle @toggleNavMobile="displayMobileNav = !displayMobileNav"></TheNavToggle>
-    <TheNavigationMobile :show="displayMobileNav"></TheNavigationMobile>
+    <TheNavToggle @toggleNavMobile="displayMobileNav = !displayMobileNav" :toggleButton="displayMobileNav"></TheNavToggle>
+    <TheNavigationMobile :show="displayMobileNav" @close="displayMobileNav = false"></TheNavigationMobile>
     <Nuxt />
   </div>
 

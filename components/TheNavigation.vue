@@ -23,6 +23,7 @@ export default {
     right: 0;
     justify-content: right;
     margin-top: $margin-small;
+
     @include respond(tablets) {
       display: none;
     }
@@ -40,10 +41,6 @@ export default {
       &:hover {
         color: $color-blue;
       }
-    }
-
-    button {
-      margin-right: 3rem;
     }
   }
 </style>

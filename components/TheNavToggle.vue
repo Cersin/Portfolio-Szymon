@@ -1,22 +1,33 @@
 <template>
   <div class="toggle">
-    <div @click="$emit('toggleNavMobile')" class="toggle-line"></div>
+    <div @click="$emit('toggleNavMobile')" class="toggle-line" :class="{transform: toggleButton}"></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "TheNavToggle"
+  name: "TheNavToggle",
+  props: {
+    toggleButton: {
+      type: Boolean,
+      default: false
+    }
+  }
 }
 </script>
 
 <style scoped lang="scss">
 .toggle {
-  display: flex;
+  display: none;
   position: fixed;
   margin-top: $margin-small + 2rem;
   margin-left: $margin-small + 1rem;
   z-index: 9999;
+  transition: .5s;
+
+  @include respond(tablets) {
+    display: flex;
+  }
 
   &-line {
     width: 2rem;
@@ -34,12 +45,24 @@ export default {
 
     &::after {
       top: .5rem;
-      //display: none;
     }
 
     &::before {
       top: -.5rem;
-      //transform: rotate(90deg);
+    }
+  }
+
+  .transform {
+    transform: rotate(405deg);
+    transition: .5s;
+
+    &::after {
+      display: none;
+    }
+
+    &::before {
+      top: 0;
+      transform: rotate(90deg);
     }
   }
 }
