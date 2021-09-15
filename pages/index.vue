@@ -1,6 +1,6 @@
 <template>
   <div class="site">
-
+    <Home></Home>
   </div>
 </template>
 
@@ -8,3 +8,9 @@
 .site {
 }
 </style>
+<script>
+import Home from "../components/pages/Home";
+export default {
+  components: {Home}
+}
+</script>
