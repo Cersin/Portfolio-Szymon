@@ -1,0 +1,11 @@
+.margin-side-mobile {
+  @include respond(tablets) {
+    margin: 0 2rem;
+  }
+}
+
+.margin-side-desktop {
+  @include respond(min-desktop) {
+    margin: 0 5rem;
+  }
+}
