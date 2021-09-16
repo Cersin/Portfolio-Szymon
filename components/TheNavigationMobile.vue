@@ -24,7 +24,7 @@ export default {
 
 <style scoped lang="scss">
   nav {
-    display: none;
+    display: flex;
     flex-direction: column;
     position: fixed;
     height: 100%;
@@ -33,7 +33,7 @@ export default {
     align-items: center;
 
     @include respond(tablets) {
-      display: flex;
+      display: none;
     }
 
     a {

@@ -1,5 +1,5 @@
 <template>
-  <section class="home margin-side-desktop margin-side-mobile">
+  <section class="home">
     <div class="home_description">
       <p class="home_description-hi">Cześć, nazywam się</p>
       <p class="home_description-name">SZYMON WÓJCIK.</p>
@@ -26,7 +26,6 @@ export default {
 .home {
   display: flex;
   flex-direction: column;
-  padding-top: 5rem;
   height: 100vh;
   justify-content: space-evenly;
 
@@ -62,38 +61,56 @@ export default {
 
   &_photo {
     position: relative;
-    height: 50%;
+    height: 60%;
     width: 100%;
+    margin-left: 7%;
 
     > * {
       display: flex;
       position: absolute;
       height: 100%;
       width: 100%;
-      justify-content: center;
       background-image: url("static/me.png");
-      background-position: center;
-      background-size: cover;
+      background-position: 35% 70%;
+      background-size: 600px;
     }
 
     :first-child {
-      clip-path: polygon(0% 0%, 0% 100%, 15% 100%, 15% 0%);
+      clip-path: polygon(0% 30%, 0% 80%, 15% 80%, 15% 30%);
+      animation: fromLeft .5s ease-in-out;
+      animation-delay: .6s;
+      animation-fill-mode: both;
     }
 
     :nth-child(2) {
-      clip-path: polygon(20% 0%, 20% 100%, 35% 100%, 35% 0%);
+      clip-path: polygon(18% 25%, 18% 90%, 33% 90%, 33% 25%);
+      animation: fromLeft .5s ease-in-out;
+      animation-delay: .3s;
+      animation-fill-mode: both;
+
     }
 
     :nth-child(3) {
-      clip-path: polygon(40% 0%, 40% 100%, 55% 100%, 55% 0%);
+      clip-path: polygon(36% 15%, 36% 95%, 51% 95%, 51% 15%);
+      animation: fromLeft .5s ease-in-out;
+      animation-fill-mode: both;
+
     }
 
     :nth-child(4) {
-      clip-path: polygon(60% 0%, 60% 100%, 75% 100%, 75% 0%);
+      clip-path: polygon(54% 20%, 54% 90%, 69% 90%, 69% 20%);
+      animation: fromRight .5s ease-in-out;
+      animation-delay: .3s;
+      animation-fill-mode: both;
+
     }
 
     :last-child {
-      clip-path: polygon(80% 0%, 80% 100%, 95% 100%, 95% 0%);
+      clip-path: polygon(72% 25%, 72% 80%, 87% 80%, 87% 25%);
+      animation: fromRight .5s ease-in-out;
+      animation-delay: .6s;
+      animation-fill-mode: both;
+
     }
   }
 }

@@ -16,7 +16,7 @@ export default {
 
 <style scoped lang="scss">
   nav {
-    display: flex;
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
@@ -25,7 +25,7 @@ export default {
     margin-top: $margin-small;
 
     @include respond(tablets) {
-      display: none;
+      display: flex;
     }
 
     > * {

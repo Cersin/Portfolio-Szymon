@@ -1,5 +1,5 @@
 <template>
-  <div class="toggle">
+  <div class="toggle margin-side-mobile">
     <div @click="$emit('toggleNavMobile')" class="toggle-line" :class="{transform: toggleButton}"></div>
   </div>
 </template>
@@ -18,15 +18,14 @@ export default {
 
 <style scoped lang="scss">
 .toggle {
-  display: none;
+  display: flex;
   position: fixed;
   margin-top: $margin-small + 2rem;
-  margin-left: $margin-small + 1rem;
   z-index: 9999;
   transition: .5s;
 
   @include respond(tablets) {
-    display: flex;
+    display: none;
   }
 
   &-line {
