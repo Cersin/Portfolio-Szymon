@@ -5,6 +5,9 @@
       <p class="home_description-name">SZYMON WÓJCIK.</p>
       <p class="home_description-developer">Jestem <span>Front-end Developerem</span>.</p>
       <the-button class="home_description-button">Podejmij współpracę</the-button>
+      <the-socials class="home_description-socials"></the-socials>
+
+
     </div>
     <div class="home_photo">
       <div></div>
@@ -19,9 +22,11 @@
 
 <script>
 import TheButton from "../UI/TheButton";
+import TheSocials from "../TheSocials";
+
 export default {
   name: "Home",
-  components: {TheButton}
+  components: {TheSocials, TheButton}
 }
 </script>
 
@@ -31,6 +36,15 @@ export default {
   flex-direction: column;
   height: 100vh;
   justify-content: space-evenly;
+
+  @media only screen and (max-height: 750px) {
+    padding-top: 2rem;
+  }
+
+  @media only screen and (max-height: 600px) {
+    padding-top: 4rem;
+  }
+
 
   &_description {
     display: flex;
@@ -43,12 +57,17 @@ export default {
       margin-top: 2rem;
     }
 
+    &-socials {
+      align-self: flex-end;
+      margin-top: 1rem;
+    }
+
     :not(:last-child) {
       margin-bottom: 3px;
     }
 
     &-hi {
-      font-size: clamp(1.5rem, 1.5vw, 3rem);
+      font-size: clamp(1.8rem, 1.8vw, 3.3rem);
     }
 
     &-name {
@@ -57,7 +76,7 @@ export default {
     }
 
     &-developer {
-      font-size: clamp(2rem, 2vw, 4rem);
+      font-size: clamp(1.8rem, 1.8vw, 3.3rem);
       //font-size: 35px;
 
       span {
@@ -66,6 +85,7 @@ export default {
       }
     }
   }
+
 
   &_photo {
     position: relative;
