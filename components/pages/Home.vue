@@ -4,6 +4,7 @@
       <p class="home_description-hi">Cześć, nazywam się</p>
       <p class="home_description-name">SZYMON WÓJCIK.</p>
       <p class="home_description-developer">Jestem <span>Front-end Developerem</span>.</p>
+      <the-button class="home_description-button">Podejmij współpracę</the-button>
     </div>
     <div class="home_photo">
       <div></div>
@@ -17,8 +18,10 @@
 </template>
 
 <script>
+import TheButton from "../UI/TheButton";
 export default {
-  name: "Home"
+  name: "Home",
+  components: {TheButton}
 }
 </script>
 
@@ -34,6 +37,11 @@ export default {
     flex-direction: column;
     justify-content: center;
     height: 50%;
+
+    &-button {
+      align-self: end;
+      margin-top: 2rem;
+    }
 
     :not(:last-child) {
       margin-bottom: 3px;
@@ -73,6 +81,7 @@ export default {
       background-image: url("static/me.png");
       background-position: 35% 70%;
       background-size: 600px;
+      background-repeat: no-repeat;
     }
 
     :first-child {
