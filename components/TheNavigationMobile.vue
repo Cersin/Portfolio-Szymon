@@ -31,6 +31,8 @@ export default {
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 999;
+    background-color: rgba($color-white, .7);
 
     @include respond(tablets) {
       display: none;

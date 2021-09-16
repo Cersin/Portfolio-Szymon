@@ -1,9 +1,10 @@
 <template>
   <div>
     <TheNavigation></TheNavigation>
-    <TheNavToggle @toggleNavMobile="displayMobileNav = !displayMobileNav" :toggleButton="displayMobileNav"></TheNavToggle>
+    <TheNavToggle @toggleNavMobile="displayMobileNav = !displayMobileNav"
+                  :toggleButton="displayMobileNav"></TheNavToggle>
     <TheNavigationMobile :show="displayMobileNav" @close="displayMobileNav = false"></TheNavigationMobile>
-    <Nuxt class="margin-side-mobile margin-side-desktop" />
+    <Nuxt :class=" { active: displayMobileNav } " class="margin-side-mobile margin-side-desktop"/>
   </div>
 
 </template>
@@ -11,6 +12,7 @@
 import TheNavigation from "../components/TheNavigation";
 import TheNavToggle from "../components/TheNavToggle";
 import TheNavigationMobile from "../components/TheNavigationMobile";
+
 export default {
   components: {TheNavigationMobile, TheNavToggle, TheNavigation},
   data() {
@@ -20,3 +22,9 @@ export default {
   }
 }
 </script>
+
+<style>
+.active {
+  filter: blur(8px);
+}
+</style>
