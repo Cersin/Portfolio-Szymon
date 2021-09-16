@@ -134,70 +134,70 @@ export default {
 
     :first-child {
       clip-path: polygon(0% 30%, 0% 80%, 15% 80%, 15% 30%);
-      animation: fromLeft .5s ease-in-out;
-      animation-delay: .6s;
+      animation: polygon-mobile-1 .5s;
+      animation-delay: 1s;
       animation-fill-mode: both;
     }
 
     :nth-child(2) {
       clip-path: polygon(18% 25%, 18% 90%, 33% 90%, 33% 25%);
-      animation: fromLeft .5s ease-in-out;
-      animation-delay: .3s;
+      animation: polygon-mobile-2 .5s;
+      animation-delay: .5s;
       animation-fill-mode: both;
     }
 
     :nth-child(3) {
       clip-path: polygon(36% 15%, 36% 95%, 51% 95%, 51% 15%);
-      animation: fromLeft .5s ease-in-out;
+      animation: polygon-mobile-3 .5s;
       animation-fill-mode: both;
     }
 
     :nth-child(4) {
       clip-path: polygon(54% 20%, 54% 90%, 69% 90%, 69% 20%);
-      animation: fromRight .5s ease-in-out;
-      animation-delay: .3s;
+      animation: polygon-mobile-4 .5s;
+      animation-delay: .5s;
       animation-fill-mode: both;
     }
 
     :last-child {
       clip-path: polygon(72% 25%, 72% 80%, 87% 80%, 87% 25%);
-      animation: fromRight .5s ease-in-out;
-      animation-delay: .6s;
+      animation: polygon-mobile-5 .5s;
+      animation-delay: 1s;
       animation-fill-mode: both;
     }
 
     @include respond(tablets) {
       :first-child {
         clip-path: polygon(0% 40%, 0% 80%, 16% 80%, 16% 40%);
-        animation: fromDown .5s ease-in-out;
-        animation-delay: .6s;
+        animation: polygon1 .5s;
+        animation-delay: 1s;
         animation-fill-mode: both;
       }
 
       :nth-child(2) {
         clip-path: polygon(18% 15%, 18% 95%, 34% 95%, 34% 15%);
-        animation: fromDown .5s ease-in-out;
-        animation-delay: .3s;
+        animation: polygon2 .5s;
+        animation-delay: .5s;
         animation-fill-mode: both;
       }
 
       :nth-child(3) {
         clip-path: polygon(36% 5%, 36% 100%, 52% 100%, 52% 5%);
-        animation: fromDown .5s ease-in-out;
+        animation: polygon3 .5s;
         animation-fill-mode: both;
       }
 
       :nth-child(4) {
         clip-path: polygon(54% 18%, 54% 88%, 70% 88%, 70% 18%);
-        animation: fromDown .5s ease-in-out;
-        animation-delay: .3s;
+        animation: polygon4 .5s;
+        animation-delay: .5s;
         animation-fill-mode: both;
       }
 
       :last-child {
         clip-path: polygon(72% 25%, 72% 75%, 88% 75%, 88% 25%);
-        animation: fromDown .5s ease-in-out;
-        animation-delay: .6s;
+        animation: polygon5 .5s;
+        animation-delay: 1s;
         animation-fill-mode: both;
       }
     }
