@@ -38,11 +38,11 @@ export default {
   justify-content: space-evenly;
 
   @media only screen and (max-height: 750px) {
-    padding-top: 2rem;
+    padding-top: 4rem;
   }
 
   @media only screen and (max-height: 600px) {
-    padding-top: 4rem;
+    padding-top: 6rem;
   }
 
 
