@@ -23,5 +23,9 @@ button {
   border: none;
   cursor: pointer;
   font-size: clamp(1.5rem, 3vw, 2rem);
+
+  &:hover, &:active {
+    opacity: .7;
+  }
 }
 </style>

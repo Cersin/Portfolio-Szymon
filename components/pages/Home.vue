@@ -113,6 +113,7 @@ export default {
 
     @include respond(tablets) {
       width: 50%;
+      height: 90%;
     }
 
     > * {
@@ -124,6 +125,11 @@ export default {
       background-position: 35% 70%;
       background-size: 600px;
       background-repeat: no-repeat;
+
+      @include respond(tablets) {
+        background-size: cover;
+        background-position: 35% 80%;
+      }
     }
 
     :first-child {
@@ -138,14 +144,12 @@ export default {
       animation: fromLeft .5s ease-in-out;
       animation-delay: .3s;
       animation-fill-mode: both;
-
     }
 
     :nth-child(3) {
       clip-path: polygon(36% 15%, 36% 95%, 51% 95%, 51% 15%);
       animation: fromLeft .5s ease-in-out;
       animation-fill-mode: both;
-
     }
 
     :nth-child(4) {
@@ -153,7 +157,6 @@ export default {
       animation: fromRight .5s ease-in-out;
       animation-delay: .3s;
       animation-fill-mode: both;
-
     }
 
     :last-child {
@@ -161,9 +164,45 @@ export default {
       animation: fromRight .5s ease-in-out;
       animation-delay: .6s;
       animation-fill-mode: both;
+    }
 
+    @include respond(tablets) {
+      :first-child {
+        clip-path: polygon(0% 40%, 0% 80%, 16% 80%, 16% 40%);
+        animation: fromDown .5s ease-in-out;
+        animation-delay: .6s;
+        animation-fill-mode: both;
+      }
+
+      :nth-child(2) {
+        clip-path: polygon(18% 15%, 18% 95%, 34% 95%, 34% 15%);
+        animation: fromDown .5s ease-in-out;
+        animation-delay: .3s;
+        animation-fill-mode: both;
+      }
+
+      :nth-child(3) {
+        clip-path: polygon(36% 5%, 36% 100%, 52% 100%, 52% 5%);
+        animation: fromDown .5s ease-in-out;
+        animation-fill-mode: both;
+      }
+
+      :nth-child(4) {
+        clip-path: polygon(54% 18%, 54% 88%, 70% 88%, 70% 18%);
+        animation: fromDown .5s ease-in-out;
+        animation-delay: .3s;
+        animation-fill-mode: both;
+      }
+
+      :last-child {
+        clip-path: polygon(72% 25%, 72% 75%, 88% 75%, 88% 25%);
+        animation: fromDown .5s ease-in-out;
+        animation-delay: .6s;
+        animation-fill-mode: both;
+      }
     }
   }
+
 }
 
 </style>
