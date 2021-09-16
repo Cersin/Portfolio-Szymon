@@ -6,9 +6,8 @@
       <p class="home_description-developer">Jestem <span>Front-end Developerem</span>.</p>
       <the-button class="home_description-button">Podejmij współpracę</the-button>
       <the-socials class="home_description-socials"></the-socials>
-
-
     </div>
+
     <div class="home_photo">
       <div></div>
       <div></div>
@@ -45,6 +44,11 @@ export default {
     padding-top: 6rem;
   }
 
+  @include respond(tablets) {
+    flex-direction: row;
+    align-items: center;
+  }
+
 
   &_description {
     display: flex;
@@ -52,14 +56,28 @@ export default {
     justify-content: center;
     height: 50%;
 
+    @include respond(tablets) {
+      width: 50%;
+    }
+
     &-button {
       align-self: end;
       margin-top: 2rem;
+
+      @include respond(tablets) {
+        align-self: flex-start;
+        margin-top: 10vh;
+      }
     }
 
     &-socials {
       align-self: flex-end;
       margin-top: 1rem;
+
+      @include respond(tablets) {
+        align-self: flex-start;
+        margin-top: 10vh;
+      }
     }
 
     :not(:last-child) {
@@ -71,7 +89,7 @@ export default {
     }
 
     &-name {
-      font-size: clamp(3rem, 6vw, 7rem);
+      font-size: clamp(3rem, 6vw, 6.5rem);
       //font-size: 70px;
     }
 
@@ -92,6 +110,10 @@ export default {
     height: 60%;
     width: 100%;
     margin-left: 7%;
+
+    @include respond(tablets) {
+      width: 50%;
+    }
 
     > * {
       display: flex;

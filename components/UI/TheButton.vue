@@ -21,6 +21,7 @@ button {
   padding: 1.5rem;
   border-radius: 3rem;
   border: none;
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  cursor: pointer;
+  font-size: clamp(1.5rem, 3vw, 2rem);
 }
 </style>
