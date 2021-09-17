@@ -46,7 +46,7 @@ export default {
 .about {
   height: 100vh;
   display: grid;
-  padding-top: 10vh;
+  padding-top: 5vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
@@ -63,6 +63,8 @@ export default {
   &_description {
     grid-area: description;
     font-weight: bold;
+    align-self: center;
+
 
     h1 {
       color: $color-blue;
