@@ -1,7 +1,7 @@
 <template>
   <nav>
-    <a href="#">HOME</a>
-    <a href="#">O MNIE</a>
+    <a href="#home">HOME</a>
+    <a href="#about">O MNIE</a>
     <a href="#">PORTFOLIO</a>
     <a href="#">OFERTA</a>
     <a href="#">KONTAKT</a>
@@ -23,6 +23,7 @@ export default {
     right: 0;
     justify-content: right;
     margin-top: $margin-small;
+    z-index: 99999;
 
     @include respond(tablets) {
       display: flex;
@@ -33,7 +34,7 @@ export default {
     }
 
     a {
-      font-size: 1.8rem;
+      font-size: clamp(1rem, 1.5vw, 1.6rem);
       text-decoration: none;
       color: $color-black;
       transition: .3s;

@@ -1,5 +1,5 @@
 <template>
-  <section class="home">
+  <section class="home" id="home">
     <div class="home_description">
       <p class="home_description-hi">Cześć, nazywam się</p>
       <p class="home_description-name">SZYMON WÓJCIK.</p>
@@ -85,16 +85,16 @@ export default {
     }
 
     &-hi {
-      font-size: clamp(1.8rem, 1.8vw, 3.3rem);
+      font-size: clamp(1.8rem, 1.7vw, 3rem);
     }
 
     &-name {
-      font-size: clamp(3rem, 6vw, 6.5rem);
+      font-size: clamp(3rem, 3vw, 5rem);
       //font-size: 70px;
     }
 
     &-developer {
-      font-size: clamp(1.8rem, 1.8vw, 3.3rem);
+      font-size: clamp(1.8rem, 1.7vw, 3.3rem);
       //font-size: 35px;
 
       span {

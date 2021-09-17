@@ -1,8 +1,8 @@
 <template>
   <transition name="navigation-mobile">
     <nav v-show="show">
-      <a @click="$emit('close')" href="#">HOME</a>
-      <a @click="$emit('close')" href="#">O MNIE</a>
+      <a @click="$emit('close')" href="#home">HOME</a>
+      <a @click="$emit('close')" href="#about">O MNIE</a>
       <a @click="$emit('close')" href="#">PORTFOLIO</a>
       <a @click="$emit('close')" href="#">OFERTA</a>
       <a @click="$emit('close')" href="#">KONTAKT</a>
