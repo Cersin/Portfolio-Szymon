@@ -101,7 +101,6 @@ export default {
 
     &-name {
       font-size: clamp(3rem, 3vw, 5rem);
-      //font-size: 70px;
     }
 
     &-developer {

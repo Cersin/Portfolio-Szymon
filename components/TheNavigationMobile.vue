@@ -3,9 +3,9 @@
     <nav v-show="show">
       <a @click="$emit('close')" href="#home">HOME</a>
       <a @click="$emit('close')" href="#about">O MNIE</a>
-      <a @click="$emit('close')" href="#">PORTFOLIO</a>
-      <a @click="$emit('close')" href="#">OFERTA</a>
-      <a @click="$emit('close')" href="#">KONTAKT</a>
+      <a @click="$emit('close')" href="#portfolio">PORTFOLIO</a>
+      <a @click="$emit('close')" href="#oferta">OFERTA</a>
+      <a @click="$emit('close')" href="#kontakt">KONTAKT</a>
     </nav>
   </transition>
 </template>

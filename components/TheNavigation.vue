@@ -2,9 +2,9 @@
   <nav>
     <a href="#home">HOME</a>
     <a href="#about">O MNIE</a>
-    <a href="#">PORTFOLIO</a>
-    <a href="#">OFERTA</a>
-    <a href="#">KONTAKT</a>
+    <a href="#portfolio">PORTFOLIO</a>
+    <a href="#oferta">OFERTA</a>
+    <a href="#kontakt">KONTAKT</a>
   </nav>
 </template>
 

@@ -2,6 +2,7 @@
   <div class="site">
     <Home></Home>
     <About></About>
+    <Portfolio></Portfolio>
   </div>
 </template>
 
@@ -11,8 +12,9 @@
 <script>
 import Home from "../components/pages/Home";
 import About from "../components/pages/About";
+import Portfolio from "../components/pages/Portfolio";
 export default {
-  components: {About, Home},
+  components: {Portfolio, About, Home},
   mounted() {
     this.setVh();
     window.addEventListener('resize', this.setVh);
