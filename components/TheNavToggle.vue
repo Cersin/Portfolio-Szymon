@@ -1,6 +1,6 @@
 <template>
   <div @click="$emit('toggleNavMobile')" class="toggle margin-side-mobile">
-    <div  class="toggle-line" :class="{transform: toggleButton}"></div>
+    <div class="toggle-line" :class="{transform: toggleButton}"></div>
   </div>
 </template>
 

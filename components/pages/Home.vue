@@ -1,20 +1,24 @@
 <template>
-  <section class="home" id="home">
-    <div class="home_description">
-      <p class="home_description-hi">Cześć, nazywam się</p>
-      <p class="home_description-name">SZYMON WÓJCIK.</p>
-      <p class="home_description-developer">Jestem <span>Front-end Developerem</span>.</p>
-      <the-button class="home_description-button">Podejmij współpracę</the-button>
-      <the-socials class="home_description-socials"></the-socials>
+  <section class="wrapper" id="home">
+    <div class="home">
+      <div class="home_description">
+        <p class="home_description-hi">Cześć, nazywam się</p>
+        <p class="home_description-name">SZYMON WÓJCIK.</p>
+        <p class="home_description-developer">Jestem <span>Front-end Developerem</span>.</p>
+        <the-button class="home_description-button">Podejmij współpracę</the-button>
+        <the-socials class="home_description-socials"></the-socials>
+      </div>
+
+      <div class="home_photo">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </div>
 
-    <div class="home_photo">
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-    </div>
+    <the-arrow :goto="'#about'"></the-arrow>
 
   </section>
 </template>
@@ -22,17 +26,24 @@
 <script>
 import TheButton from "../UI/TheButton";
 import TheSocials from "../TheSocials";
+import TheArrow from "../UI/TheArrow";
 
 export default {
   name: "Home",
-  components: {TheSocials, TheButton}
+  components: {TheArrow, TheSocials, TheButton}
 }
 </script>
 
 <style scoped lang="scss">
-.home {
+.wrapper {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
+}
+
+.home {
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -55,7 +66,6 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50%;
 
     @include respond(tablets) {
       width: 50%;
@@ -108,13 +118,17 @@ export default {
 
   &_photo {
     position: relative;
-    height: 60%;
+    height: 50%;
     width: 100%;
     margin-left: 7%;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
 
     @include respond(tablets) {
       width: 50%;
       height: 90%;
+      top: 10%;
     }
 
     > * {
