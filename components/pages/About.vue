@@ -45,6 +45,7 @@ export default {
 <style scoped lang="scss">
 .about {
   height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   display: grid;
   padding-top: 5vh;
   grid-template-columns: 1fr 1fr;

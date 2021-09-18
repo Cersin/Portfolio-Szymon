@@ -31,9 +31,10 @@ export default {
 
 <style scoped lang="scss">
 .home {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: space-evenly;
 
   @media only screen and (max-height: 750px) {
