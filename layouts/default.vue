@@ -4,7 +4,7 @@
     <TheNavToggle @toggleNavMobile="displayMobileNav = !displayMobileNav"
                   :toggleButton="displayMobileNav"></TheNavToggle>
     <TheNavigationMobile :show="displayMobileNav" @close="displayMobileNav = false"></TheNavigationMobile>
-    <Nuxt :class=" { active: displayMobileNav } " class="margin-side-mobile margin-side-desktop"/>
+    <Nuxt :class=" { active: displayMobileNav } "/>
   </div>
 
 </template>

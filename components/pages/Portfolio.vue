@@ -23,7 +23,7 @@
     </div>
 
     <the-button @click="loadMore()" class="portfolio_projects-button">Załaduj więcej</the-button>
-    <the-arrow class="portfolio_projects-arrow"></the-arrow>
+    <the-arrow :goto="'#offer'" class="portfolio_projects-arrow"></the-arrow>
   </section>
 </template>
 
@@ -67,7 +67,7 @@ export default {
           href: "https://lapiemyszczyty.pl"
         }
       ],
-      limit: 3
+      limit: 2
     }
   },
   computed: {
@@ -77,7 +77,7 @@ export default {
   },
   methods: {
     loadMore() {
-      this.limit = this.limit +3;
+      this.limit = this.limit + 2;
     }
   }
 }

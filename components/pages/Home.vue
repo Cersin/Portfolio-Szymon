@@ -47,6 +47,7 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  font-weight: 600;
 
   @media only screen and (max-height: 750px) {
     padding-top: 4rem;
