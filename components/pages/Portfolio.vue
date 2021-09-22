@@ -23,7 +23,7 @@
     </div>
 
     <the-button @click="loadMore()" class="portfolio_projects-button">Załaduj więcej</the-button>
-    <the-arrow :goto="'#offer'" class="portfolio_projects-arrow"></the-arrow>
+    <the-arrow :goto="'#oferta'" class="portfolio_projects-arrow"></the-arrow>
   </section>
 </template>
 

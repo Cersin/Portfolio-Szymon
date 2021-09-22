@@ -1,5 +1,5 @@
 <template>
-  <section class="offer" id="offer">
+  <section class="offer" id="oferta">
     <h1 class="margin-side-mobile">OFERTA</h1>
     <div class="offer-img">
       <img class="offer-img-photo" src="offer.jpg" alt="oferta">
@@ -27,7 +27,7 @@
       </svg>
     </div>
 
-    <div class="offer_desktop">
+    <div class="offer_desktop margin-side-desktop margin-side-big">
       <div class="offer_desktop-text">
         <p>Każdy projekt wykonuję z należytą starannością.</p>
         <p>Szczególną wagę przywiązuję do: jakości kodu, opracowania pod kątem RWD oraz zadowolenia klienta.</p>
@@ -48,7 +48,8 @@
       </div>
     </div>
 
-    <!--    <TheArrow class="offer_box-arrow "></TheArrow>-->
+    <TheArrow class="offer_box-arrow"></TheArrow>
+    <TheArrow class="offer_box-arrow-2"></TheArrow>
   </section>
 </template>
 
@@ -72,7 +73,6 @@ export default {
   justify-content: center;
 
   @include respond(tablets) {
-    position: static;
     flex-direction: column;
     justify-content: flex-start;
   }
@@ -85,6 +85,7 @@ export default {
     font-size: 2.5rem;
 
     @include respond(tablets) {
+      display: none;
     }
   }
 
@@ -122,13 +123,13 @@ export default {
     font-weight: 600;
     padding: 2rem 1rem;
     border-radius: 31px;
-    font-size: clamp(1.5rem, 2vw, 3rem);
+    font-size: clamp(1.5rem, 1.8vw, 4rem);
     text-align: center;
 
     @include respond(tablets) {
       top: auto;
       right: auto;
-      margin-top: 20%;
+      margin-top: 15vw;
       font-weight: 500;
       align-self: center;
     }
@@ -171,14 +172,62 @@ export default {
     }
 
     &-arrow {
-      align-self: flex-end;
-      margin-bottom: 2rem;
+      position: absolute;
+      bottom: 5%;
+    }
+
+    &-arrow-2 {
+      position: absolute;
+      bottom: 6.5%;
     }
 
   }
 
   &_desktop {
     color: $color-black;
+    display: none;
+
+    @include respond(tablets) {
+      display: flex;
+      margin-top: 5rem;
+    }
+
+    &-text {
+      font-weight: 400;
+      font-size: clamp(2rem, 1.5vw, 5rem);
+      width: 60%;
+
+      :first-child {
+        margin-bottom: 4rem;
+      }
+    }
+
+    &-icons {
+      width: 14rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      align-items: flex-end;
+      margin-right: 2vw;
+
+      @include respond(mega-big) {
+        width: 20rem;
+      }
+
+      svg {
+        height: 8rem;
+        width: 8rem;
+
+        @include respond(mega-big) {
+          height: 10rem;
+          width: 10rem;
+        }
+      }
+
+      :first-child {
+        margin-right: 5rem;
+      }
+    }
 
   }
 }

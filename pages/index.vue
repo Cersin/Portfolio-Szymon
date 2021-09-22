@@ -1,8 +1,8 @@
 <template>
   <div class="site">
-    <Home class="margin-side-mobile margin-side-desktop"></Home>
-    <About class="margin-side-mobile margin-side-desktop"></About>
-    <Portfolio class="margin-side-mobile margin-side-desktop"></Portfolio>
+    <Home class="margin-side-mobile margin-side-desktop margin-side-big"></Home>
+    <About class="margin-side-mobile margin-side-desktop margin-side-big"></About>
+    <Portfolio class="margin-side-mobile margin-side-desktop margin-side-big"></Portfolio>
     <Offer></Offer>
   </div>
 </template>

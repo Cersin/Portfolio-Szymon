@@ -4,6 +4,12 @@
 
 .margin-side-desktop {
   @include respond(medium) {
-    margin: 0 3rem;
+    margin: 0 4vw;
+  }
+}
+
+.margin-side-big {
+  @include respond(mega-big) {
+    margin: 0 15rem;
   }
 }

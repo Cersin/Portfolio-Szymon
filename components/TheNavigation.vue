@@ -30,11 +30,12 @@ export default {
     }
 
     > * {
-      margin-right: clamp(2rem, 5vw, 8rem);
+      margin-right: clamp(2rem, 5vw, 10rem);
     }
 
     a {
-      font-size: clamp(1rem, 1.5vw, 1.6rem);
+      font-size: clamp(1rem, 1.5vw, 1.7rem);
+      font-weight: 600;
       text-decoration: none;
       color: $color-black;
       transition: .3s;
