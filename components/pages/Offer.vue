@@ -48,8 +48,8 @@
       </div>
     </div>
 
-    <TheArrow class="offer_box-arrow"></TheArrow>
-    <TheArrow class="offer_box-arrow-2"></TheArrow>
+    <TheArrow :goto="'#offerDescribe'" class="offer_box-arrow"></TheArrow>
+    <TheArrow :goto="'#offerDescribe'" class="offer_box-arrow-2"></TheArrow>
   </section>
 </template>
 
