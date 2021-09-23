@@ -343,7 +343,7 @@ export default {
         font-size: clamp(1rem, 1.2vw, 4rem);
 
         @include respond(tablets) {
-          width: 80%;
+          width: 70%;
           margin-top: 1.5rem;
         }
 
