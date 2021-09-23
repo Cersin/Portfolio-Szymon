@@ -1,4 +1,6 @@
 # Portfolio-Szymon
+IN PROGRESS
+https://cersin.github.io/Portfolio-Szymon/
 
 ## Build Setup
 
