@@ -152,7 +152,7 @@ export default {
 
     p {
       font-weight: inherit;
-      font-size: clamp(1rem, 1vw, 2rem);
+      font-size: clamp(.8rem, 3vw, 1.5rem);
 
       &:not(:last-child) {
         margin-bottom: 1rem;

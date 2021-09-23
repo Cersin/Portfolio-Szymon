@@ -96,7 +96,7 @@ export default {
     margin-bottom: 5vh;
     color: $color-blue;
     font-weight: bold;
-    font-size: clamp(3rem, 3vw, 6rem);
+    font-size: clamp(2rem, 3vw, 6rem);
 
     @include respond(tablets) {
       margin-left: 20%;
@@ -114,8 +114,8 @@ export default {
 
     &_box {
       position: relative;
-      height: clamp(200px, 25vw, 400px);
-      width: clamp(200px, 25vw, 400px);
+      height: clamp(170px, 25vw, 400px);
+      width: clamp(170px, 25vw, 400px);
 
       &:hover  &-description  {
         display: flex;

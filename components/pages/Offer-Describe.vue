@@ -78,8 +78,8 @@
       <div class="offerDescribe_element_box">
         <header>Tworzenie stron www</header>
         <div class="offerDescribe_element_box-line offerDescribe_element_box-line-2"></div>
-        <p>Strony internetowe tworzę w technologiach: <span>Vue</span>, <span>Vuetify</span>, <span>Nuxt</span> oraz
-          <span>MongoDB</span>.
+        <p>Strony internetowe tworzę w technologiach: <span>Vue</span>, <span>Nuxt</span> oraz
+          <span>Express</span>.
         </p>
       </div>
       <svg class="svg-order" viewBox="0 0 196 148" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -303,7 +303,7 @@ export default {
       background-color: #E7E4E8;
       border-radius: 80px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      padding: 2rem 2rem;
+      padding: 3rem 3rem;
       min-height: 20vh;
 
       @include respond(tablets) {
@@ -315,7 +315,7 @@ export default {
       header {
         align-self: center;
         font-weight: 700;
-        font-size: clamp(1.4rem, 1.4vw, 5rem);
+        font-size: clamp(1rem, 1.5vw, 4rem);
         text-transform: uppercase;
       }
 
@@ -340,7 +340,7 @@ export default {
         width: 60%;
         font-weight: 400;
         margin-left: 1rem;
-        font-size: clamp(1.3rem, 1.2vw, 4rem);
+        font-size: clamp(1rem, 1.2vw, 4rem);
 
         @include respond(tablets) {
           width: 80%;
@@ -357,7 +357,7 @@ export default {
     svg {
       position: absolute;
       right: 0;
-      bottom: -30%;
+      bottom: -10%;
 
       height: 15vh;
       width: auto;

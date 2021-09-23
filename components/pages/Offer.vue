@@ -82,7 +82,7 @@ export default {
     z-index: 10;
     left: 0;
     top: 13%;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 3vw, 6rem);
 
     @include respond(tablets) {
       display: none;
@@ -123,7 +123,7 @@ export default {
     font-weight: 600;
     padding: 2rem 1rem;
     border-radius: 31px;
-    font-size: clamp(1.5rem, 1.8vw, 4rem);
+    font-size: clamp(1rem, 3vw, 4rem);
     text-align: center;
 
     @include respond(tablets) {
@@ -140,7 +140,7 @@ export default {
 
     &-2 {
       top: 50%;
-      font-size: clamp(1rem, 1.5vw, 2rem);
+      font-size: clamp(.8rem, 3vw, 2rem);
       font-weight: 400;
       color: rgba($color-white, .9);
 
