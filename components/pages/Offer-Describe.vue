@@ -260,12 +260,17 @@
         </defs>
       </svg>
     </div>
+    <TheArrow :goto="'#kontakt'"></TheArrow>
   </div>
 </template>
 
 <script>
+import TheArrow from "../UI/TheArrow";
+
 export default {
-  name: "Offer-Describe"
+  name: "Offer-Describe",
+  components: {TheArrow}
+
 }
 </script>
 

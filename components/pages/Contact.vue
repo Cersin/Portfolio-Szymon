@@ -19,7 +19,10 @@
           <textarea required name="message"></textarea>
         </div>
       </div>
-      <the-button class="contact_form-button">wyślij</the-button>
+      <div class="contact_form-button">
+        <the-button>wyślij</the-button>
+        <the-socials class="contact_form-button-socials_desktop"></the-socials>
+      </div>
     </form>
   </section>
 </template>
@@ -61,18 +64,31 @@ export default {
   grid-template-areas:
                         "header header"
                         "socials photo"
-                        "form form"
-                        "button button";
-  grid-template-columns: 1fr 1fr;
+                        "form form";
+  grid-template-columns:1fr;
   grid-template-rows: 20vh auto 1fr auto;
   justify-items: center;
   align-items: center;
+
+  @include respond(tablets) {
+    grid-template-areas:
+                        "header photo"
+                        "form photo";
+    grid-template-rows: 30% 1fr;
+    grid-template-columns: 1fr 30vw;
+    margin: 0;
+  }
 
   header {
     grid-area: header;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: clamp(1.8rem, 1.7vw, 3rem);
+    font-size: clamp(2rem, 3vw, 6rem);
+
+    @include respond(tablets) {
+      align-self: end;
+      margin-bottom: 2rem;
+    }
 
     span {
       color: $color-blue;
@@ -81,6 +97,10 @@ export default {
 
   &-socials {
     grid-area: socials;
+
+    @include respond(tablets) {
+      display: none;
+    }
   }
 
   &-photo {
@@ -98,6 +118,10 @@ export default {
 
       @include respond(tablets) {
         display: block;
+        grid-area: photo;
+        height: 100%;
+        width: auto;
+        justify-self: end;
       }
     }
   }
@@ -108,6 +132,11 @@ export default {
     display: flex;
     flex-direction: column;
 
+    @include respond(tablets) {
+      width: 60%;
+      align-self: start;
+    }
+
     &_box {
       width: 100%;
       position: relative;
@@ -116,6 +145,11 @@ export default {
       flex-direction: column;
       align-items: center;
       border-radius: 20px;
+      font-size: clamp(1rem, 1.7vw, 2rem);
+
+      @include respond(tablets) {
+        background-color: transparent;
+      }
 
       &:after {
         content: '';
@@ -126,6 +160,10 @@ export default {
         background-color: $color-darkblue;
         border-radius: 20px;
         transform: translate(5%, 10%);
+
+        @include respond(tablets) {
+          display: none;
+        }
       }
 
       :first-child {
@@ -142,7 +180,11 @@ export default {
 
         p {
           color: $color-white;
-          font-weight: 500;
+          font-weight: 600;
+
+          @include respond(tablets) {
+            color: $color-black;
+          }
         }
 
         input {
@@ -152,6 +194,9 @@ export default {
           border-bottom: 1px solid $color-white;
           padding-bottom: .5rem;
 
+          @include respond(tablets) {
+            border-bottom: 1px solid $color-black;
+          }
         }
 
         textarea {
@@ -161,6 +206,10 @@ export default {
           border: none;
           border-bottom: 1px solid $color-white;
           margin-bottom: 2rem;
+
+          @include respond(tablets) {
+            border-bottom: 1px solid $color-black;
+          }
         }
       }
 
@@ -169,6 +218,22 @@ export default {
     &-button {
       align-self: flex-end;
       margin-top: 10%;
+
+      @include respond(tablets) {
+        display: flex;
+        width: 90%;
+        align-self: center;
+      }
+
+      &-socials_desktop {
+        display: none;
+
+        @include respond(tablets) {
+          display: flex;
+          flex: 1;
+          justify-content: flex-end;
+        }
+      }
     }
   }
 
