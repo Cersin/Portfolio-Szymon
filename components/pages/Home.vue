@@ -5,7 +5,7 @@
         <p class="home_description-hi">Cześć, nazywam się</p>
         <p class="home_description-name">SZYMON WÓJCIK.</p>
         <p class="home_description-developer">Jestem <span>Front-end Developerem</span>.</p>
-        <the-button class="home_description-button">Podejmij współpracę</the-button>
+        <the-button class="home_description-button"><a href="#kontakt">Podejmij współpracę</a></the-button>
         <the-socials class="home_description-socials"></the-socials>
       </div>
 
@@ -48,6 +48,11 @@ export default {
   flex-direction: column;
   justify-content: space-evenly;
   font-weight: 600;
+
+  a {
+    text-decoration: none;
+    color: $color-white;
+  }
 
   @media only screen and (max-height: 750px) {
     padding-top: 4rem;

@@ -342,7 +342,7 @@ export default {
       }
 
       p {
-        width: 60%;
+        width: 50%;
         font-weight: 400;
         margin-left: 1rem;
         font-size: clamp(1rem, 1.2vw, 4rem);
@@ -379,6 +379,5 @@ export default {
 
 .svg-order {
   order: -1;
-  margin-right: 5%;
 }
 </style>
