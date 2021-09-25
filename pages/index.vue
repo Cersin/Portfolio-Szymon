@@ -5,6 +5,7 @@
     <Portfolio class="margin-side-mobile margin-side-desktop margin-side-big"></Portfolio>
     <Offer></Offer>
     <OfferDescribe class="margin-side-mobile margin-side-desktop margin-side-big"></OfferDescribe>
+    <Contact class="margin-side-mobile"></Contact>
   </div>
 </template>
 
@@ -17,8 +18,9 @@ import About from "../components/pages/About";
 import Portfolio from "../components/pages/Portfolio";
 import Offer from "../components/pages/Offer";
 import OfferDescribe from "../components/pages/Offer-Describe";
+import Contact from "../components/pages/Contact";
 export default {
-  components: {OfferDescribe, Offer, Portfolio, About, Home},
+  components: {Contact, OfferDescribe, Offer, Portfolio, About, Home},
   mounted() {
     this.setVh();
     window.addEventListener('resize', this.setVh);

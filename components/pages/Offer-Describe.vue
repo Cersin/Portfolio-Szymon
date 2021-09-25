@@ -260,12 +260,17 @@
         </defs>
       </svg>
     </div>
+    <TheArrow :goto="'#kontakt'"></TheArrow>
   </div>
 </template>
 
 <script>
+import TheArrow from "../UI/TheArrow";
+
 export default {
-  name: "Offer-Describe"
+  name: "Offer-Describe",
+  components: {TheArrow}
+
 }
 </script>
 
@@ -343,7 +348,7 @@ export default {
         font-size: clamp(1rem, 1.2vw, 4rem);
 
         @include respond(tablets) {
-          width: 80%;
+          width: 70%;
           margin-top: 1.5rem;
         }
 

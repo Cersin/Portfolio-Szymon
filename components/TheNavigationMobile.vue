@@ -33,6 +33,7 @@ export default {
     align-items: center;
     z-index: 999;
     background-color: rgba($color-white, .7);
+    font-weight: 600;
 
     @include respond(tablets) {
       display: none;
