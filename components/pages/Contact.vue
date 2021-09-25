@@ -42,7 +42,7 @@ export default {
   },
   methods: {
     sendEmail(e) {
-      emailjs.sendForm('service_275ecft', 'template_dm2kels', e.target, 'user_Glrid5hQCnoIO9RCdwtRz')
+      emailjs.sendForm(process.env.EMAIL_SERVICE_ID, process.env.EMAIL_SERVICE_TEMPLATE, e.target, process.env.EMAIL_SERVICE_USER)
         .then((result) => {
           this.isSend = true;
           console.log('SUCCESS!', result.status, result.text);

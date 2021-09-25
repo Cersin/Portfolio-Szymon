@@ -22,6 +22,7 @@ import Contact from "../components/pages/Contact";
 export default {
   components: {Contact, OfferDescribe, Offer, Portfolio, About, Home},
   mounted() {
+    console.log(process.env.TEST_VARIABLE);
     this.setVh();
     window.addEventListener('resize', this.setVh);
   },
