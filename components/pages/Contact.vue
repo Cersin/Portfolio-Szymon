@@ -4,11 +4,11 @@
     <the-socials class="contact-socials"></the-socials>
     <img src="me3-mobile.png" alt="photo of me" class="contact-photo">
     <img src="me3.png" alt="photo of me" class="contact-photo-desktop">
-    <form class="contact_form" @submit.prevent="sendEmail">
+    <form class="contact_form"  id="form" @submit.prevent="sendEmail">
       <div class="contact_form_box">
         <div class="contact_form_box-input">
           <p>Imię i nazwisko</p>
-          <input type="text" required name="user_name">
+          <input type="text" required name="user_name"">
         </div>
         <div class="contact_form_box-input">
           <p>E-mail</p>
@@ -20,7 +20,7 @@
         </div>
       </div>
       <div class="contact_form-button">
-        <the-button>wyślij</the-button>
+        <the-button id="form_button">wyślij</the-button>
         <the-socials class="contact_form-button-socials_desktop"></the-socials>
       </div>
     </form>
@@ -45,13 +45,13 @@ export default {
       emailjs.sendForm(process.env.EMAIL_SERVICE_ID, process.env.EMAIL_SERVICE_TEMPLATE, e.target, process.env.EMAIL_SERVICE_USER)
         .then((result) => {
           this.isSend = true;
+          document.getElementById('form').style.display = 'none';
           console.log('SUCCESS!', result.status, result.text);
         }, (error) => {
-          this.$toast.error(this.$t('contact.error'));
           console.log('FAILED...', error);
         });
     }
-  },
+  }
 }
 </script>
 
@@ -170,7 +170,7 @@ export default {
         padding-top: 1rem;
       }
 
-      :not(:last-child){
+      :not(:last-child) {
         margin-bottom: 1rem;
       }
 
@@ -209,6 +209,8 @@ export default {
 
           @include respond(tablets) {
             border-bottom: 1px solid $color-black;
+            min-height: 20vh;
+
           }
         }
       }
