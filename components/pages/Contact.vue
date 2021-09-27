@@ -7,16 +7,16 @@
     <form class="contact_form"  id="form" @submit.prevent="sendEmail">
       <div class="contact_form_box">
         <div class="contact_form_box-input">
-          <p>Imię i nazwisko</p>
-          <input type="text" required name="user_name"">
+          <input type="text" required name="user_name">
+          <p class="imie">Imię i nazwisko</p>
         </div>
         <div class="contact_form_box-input">
-          <p>E-mail</p>
           <input type="email" required name="user_email">
+          <p>E-mail</p>
         </div>
         <div class="contact_form_box-input">
-          <p>Treść</p>
           <textarea required name="message"></textarea>
+          <p>Treść</p>
         </div>
       </div>
       <div class="contact_form-button">
@@ -176,11 +176,14 @@ export default {
 
       &-input {
         width: 90%;
-        align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
         p {
           color: $color-white;
           font-weight: 600;
+          order: -1;
 
           @include respond(tablets) {
             color: $color-black;
@@ -239,6 +242,17 @@ export default {
     }
   }
 
+}
+
+input:focus + p, textarea:focus + p {
+  transition: all .2s;
+  color: $color-blue;
+  color: $color-darkblue;
+
+  @include respond(tablets) {
+    transition: all .2s;
+    color: $color-blue;
+  }
 }
 
 </style>

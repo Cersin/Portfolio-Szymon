@@ -1,7 +1,9 @@
 <template>
   <div @click="$emit('toggleNavMobile')" class="toggle margin-side-mobile">
-    <div  class="toggle-line" :class="{transform: toggleButton}"></div>
+    <div class="toggle-line" :class="{transform: toggleButton}"></div>
+    <div class="background"></div>
   </div>
+
 </template>
 
 <script>
@@ -32,7 +34,7 @@ export default {
     width: 2rem;
     height: .2rem;
     background-color: $color-grey;
-    //transform: rotate(45deg);
+    position: relative;
 
     &::after, &::before {
       content: '';
@@ -64,6 +66,17 @@ export default {
       transform: rotate(90deg);
     }
   }
+}
+
+
+.background {
+  position: absolute;
+  content: '';
+  height: 700%;
+  width: 100%;
+  background-color: $color-white;
+  z-index: -10;
+  transform: translateY(-50%);
 }
 
 </style>

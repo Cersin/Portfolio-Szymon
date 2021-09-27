@@ -79,6 +79,7 @@ export default {
 
   h1 {
     position: absolute;
+    color: $color-blue;
     z-index: 10;
     left: 0;
     top: 13%;
@@ -189,13 +190,15 @@ export default {
 
     @include respond(tablets) {
       display: flex;
-      margin-top: 5rem;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
     }
 
     &-text {
       font-weight: 400;
       font-size: clamp(2rem, 1.5vw, 5rem);
-      width: 60%;
+      width: 50%;
 
       :first-child {
         margin-bottom: 4rem;
@@ -206,9 +209,9 @@ export default {
       width: 14rem;
       display: flex;
       flex-direction: column;
-      flex: 1;
       align-items: flex-end;
       margin-right: 2vw;
+      margin-left: 5vh;
 
       @include respond(mega-big) {
         width: 20rem;

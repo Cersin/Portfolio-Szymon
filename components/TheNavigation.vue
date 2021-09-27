@@ -24,6 +24,7 @@ export default {
     justify-content: right;
     margin-top: $margin-small;
     z-index: 99999;
+    transition: all .5s;
 
     @include respond(tablets) {
       display: flex;
