@@ -24,6 +24,9 @@
         <the-socials class="contact_form-button-socials_desktop"></the-socials>
       </div>
     </form>
+    <div v-if="isSend" class="contact-success">
+      <h1>Wiadomość wysłana, dziękuję za kontakt.</h1>
+    </div>
     <the-spinner v-if="isSending"></the-spinner>
   </section>
 </template>
@@ -246,6 +249,14 @@ export default {
         }
       }
     }
+  }
+
+  &-success {
+    grid-area: form;
+    color: $color-blue;
+    text-align: center;
+    font-size: clamp(2rem, 3vw, 6rem);
+    width: 100%;
   }
 }
 
