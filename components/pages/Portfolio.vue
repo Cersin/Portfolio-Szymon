@@ -112,10 +112,14 @@ export default {
     flex: 1;
     color: $color-white;
 
+    @include respond(tablets) {
+      gap: 6rem;
+    }
+
     &_box {
       position: relative;
-      height: clamp(170px, 25vw, 400px);
-      width: clamp(170px, 25vw, 400px);
+      height: clamp(170px, 30vw, 400px);
+      width: clamp(170px, 30vw, 400px);
 
       &:hover  &-description  {
         display: flex;
