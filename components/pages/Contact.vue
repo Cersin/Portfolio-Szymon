@@ -4,7 +4,7 @@
     <the-socials class="contact-socials"></the-socials>
     <img src="me3-mobile.png" alt="photo of me" class="contact-photo">
     <img src="me3.png" alt="photo of me" class="contact-photo-desktop">
-    <form class="contact_form"  id="form" @submit.prevent="sendEmail">
+    <form v-if="!isSend" class="contact_form" id="form" @submit.prevent="sendEmail">
       <div class="contact_form_box">
         <div class="contact_form_box-input">
           <input type="text" required name="user_name">
@@ -24,6 +24,7 @@
         <the-socials class="contact_form-button-socials_desktop"></the-socials>
       </div>
     </form>
+    <the-spinner v-if="isSending"></the-spinner>
   </section>
 </template>
 
@@ -31,25 +32,30 @@
 import TheSocials from "../TheSocials";
 import emailjs from 'emailjs-com';
 import TheButton from "../UI/TheButton";
+import TheSpinner from "../UI/TheSpinner";
 
 export default {
   name: "Contact",
-  components: {TheButton, TheSocials},
+  components: {TheSpinner, TheButton, TheSocials},
   data() {
     return {
-      isSend: false
+      isSend: false,
+      isSending: false
     }
   },
   methods: {
-    sendEmail(e) {
-      emailjs.sendForm(process.env.EMAIL_SERVICE_ID, process.env.EMAIL_SERVICE_TEMPLATE, e.target, process.env.EMAIL_SERVICE_USER)
-        .then((result) => {
-          this.isSend = true;
-          document.getElementById('form').style.display = 'none';
-          console.log('SUCCESS!', result.status, result.text);
-        }, (error) => {
-          console.log('FAILED...', error);
-        });
+    async sendEmail(e) {
+      this.isSending = true;
+      try {
+        let email = await emailjs.sendForm(process.env.EMAIL_SERVICE_ID, process.env.EMAIL_SERVICE_TEMPLATE, e.target, process.env.EMAIL_SERVICE_USER);
+        this.isSend = true;
+        this.isSending = false;
+        document.getElementById('form').style.display = 'none';
+      } catch (error) {
+        this.isSending = false;
+        console.log('FAILED...', error);
+        alert('Wystąpił błąd');
+      }
     }
   }
 }
@@ -241,13 +247,11 @@ export default {
       }
     }
   }
-
 }
 
 input:focus + p, textarea:focus + p {
   transition: all .2s;
   color: $color-blue;
-  color: $color-darkblue;
 
   @include respond(tablets) {
     transition: all .2s;
