@@ -1,16 +1,10 @@
 <template>
   <section class="about" id="about">
     <div class="about_description">
-      <h1>LOREM IPSUM</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet at earum enim ex exercitationem iusto
-        laudantium provident quia repellat rerum soluta tempora, ullam? Ad expedita reiciendis sapiente suscipit
-        velit.</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus amet at earum enim ex exercitationem iusto
-        laudantium provident quia repellat rerum soluta tempora, ullam? Ad expedita reiciendis sapiente suscipit
-        velit.</p>
-      <p>Lorem ipsum dolor sit amet, <span>TECHNOLOGIE</span> adipisicing elit. Accusamus amet at earum enim ex
-        exercitationem iusto laudantium provident quia repellat rerum soluta tempora, ullam? Ad expedita reiciendis
-        sapiente suscipit velit.</p>
+      <h1>O MNIE</h1>
+      <p>Nazywam się Szymon Wójcik i zajmuje się front-endem.</p>
+      <p>Moim głównym zainteresowaniem jest tworzenie stron internetowych i aplikacji mobilnych. Pragnę nieustannie rozwijać się w tym kierunku, więc postanowiłem powiązać ścieżkę edukacyjna z karierą zawodowa. Efektem takich decyzji jest ukończenie I stopnia studiów informatycznych i rozpoczęcie magisterki na tym samym kierunku.</p>
+      <p>Szczególną uwagę przywiązuje do poszerzania wiedzy i umiejętności w dziedzinie nowych <span>TECHNOLOGII</span>, które pozwalają usprawniać moje projekty. Głównie programuje w: Vue, Nativescript oraz Nuxt. Prócz programowania lubie chodzić po górach, grać w gry i oglądać F1 🙂</p>
     </div>
 
     <div class="about_technologies">
