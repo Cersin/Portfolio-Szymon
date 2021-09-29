@@ -28,6 +28,7 @@
       <h1>Wiadomość wysłana, dziękuję za kontakt.</h1>
     </div>
     <the-spinner v-if="isSending"></the-spinner>
+    <the-arrow :direction="'up'"></the-arrow>
   </section>
 </template>
 
@@ -36,10 +37,11 @@ import TheSocials from "../TheSocials";
 import emailjs from 'emailjs-com';
 import TheButton from "../UI/TheButton";
 import TheSpinner from "../UI/TheSpinner";
+import TheArrow from "../UI/TheArrow";
 
 export default {
   name: "Contact",
-  components: {TheSpinner, TheButton, TheSocials},
+  components: {TheArrow, TheSpinner, TheButton, TheSocials},
   data() {
     return {
       isSend: false,
@@ -73,17 +75,19 @@ export default {
   grid-template-areas:
                         "header header"
                         "socials photo"
-                        "form form";
+                        "form form"
+                        "arrow arrow";
   grid-template-columns:1fr;
-  grid-template-rows: 20vh auto 1fr auto;
+  grid-template-rows: 20vh auto 1fr 10vh;
   justify-items: center;
   align-items: center;
 
   @include respond(tablets) {
     grid-template-areas:
                         "header photo"
-                        "form photo";
-    grid-template-rows: 30% 1fr;
+                        "form photo"
+                        "arrow arrow";
+    grid-template-rows: 30% 1fr 10vh;
     grid-template-columns: 1fr 30vw;
     margin: 0;
   }
