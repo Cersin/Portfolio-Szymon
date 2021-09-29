@@ -1,5 +1,5 @@
 <template>
-  <section class="contact" id="kontakt">
+  <section class="contact">
     <header>zapraszam do <span>kontaktu</span></header>
     <the-socials class="contact-socials"></the-socials>
     <img src="me3-mobile.png" alt="photo of me" class="contact-photo">

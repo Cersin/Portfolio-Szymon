@@ -1,5 +1,5 @@
 <template>
-  <section class="wrapper" id="home">
+  <section class="wrapper">
     <div class="home">
       <div class="home_description">
         <p class="home_description-hi">Cześć, nazywam się</p>
@@ -49,6 +49,10 @@ export default {
   justify-content: space-evenly;
   font-weight: 600;
 
+  @include respond(tablets) {
+    justify-content: space-between;
+  }
+
   a {
     text-decoration: none;
     color: $color-white;
@@ -72,10 +76,6 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    @include respond(tablets) {
-      width: 50%;
-    }
 
     &-button {
       align-self: end;
@@ -111,7 +111,13 @@ export default {
 
     &-developer {
       font-size: clamp(1.8rem, 1.7vw, 3.3rem);
-      //font-size: 35px;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      border-right: .13em solid $color-grey; /* The typwriter cursor */
+      white-space: nowrap; /* Keeps the content on a single line */
+      width: fit-content;
+      animation:
+        typing 3s steps(40, end),
+        blink-caret 1s step-end infinite;
 
       span {
         color: $color-blue;

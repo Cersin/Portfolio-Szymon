@@ -1,5 +1,5 @@
 <template>
-  <div class="offerDescribe" id="offerDescribe">
+  <div class="offerDescribe">
     <div class="offerDescribe_element">
       <div class="offerDescribe_element_box">
         <header>Tworzenie aplikacji mobilnych</header>

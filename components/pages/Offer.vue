@@ -1,5 +1,5 @@
 <template>
-  <section class="offer" id="oferta">
+  <section class="offer">
     <h1 class="margin-side-mobile">OFERTA</h1>
     <div class="offer-img">
       <img class="offer-img-photo" src="offer.jpg" alt="oferta">
