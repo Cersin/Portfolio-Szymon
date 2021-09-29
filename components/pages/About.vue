@@ -119,6 +119,7 @@ export default {
 .about {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+  color: $color-black;
   display: grid;
   padding-top: 5vh;
   grid-template-columns: 1fr 1fr;
@@ -147,7 +148,7 @@ export default {
       color: $color-blue;
       margin-bottom: 2rem;
       font-weight: inherit;
-      font-size: clamp(1.5rem, 2vw, 3rem);
+      font-size: clamp(2rem, 3vw, 4rem);
     }
 
     p {

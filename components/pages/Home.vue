@@ -48,6 +48,7 @@ export default {
   flex-direction: column;
   justify-content: space-evenly;
   font-weight: 600;
+  color: $color-black;
 
   @include respond(tablets) {
     justify-content: space-between;

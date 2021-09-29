@@ -87,6 +87,7 @@ export default {
 .portfolio {
   min-height: 100vh;
   min-height: calc(var(--vh, 1vh) * 100);
+  color: $color-black;
 
   display: flex;
   flex-direction: column;
@@ -96,7 +97,7 @@ export default {
     margin-bottom: 5vh;
     color: $color-blue;
     font-weight: bold;
-    font-size: clamp(2rem, 3vw, 6rem);
+    font-size: clamp(2rem, 3vw, 4rem);
 
     @include respond(tablets) {
       margin-left: 20%;

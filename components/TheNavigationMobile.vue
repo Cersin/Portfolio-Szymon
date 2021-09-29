@@ -1,11 +1,11 @@
 <template>
   <transition name="navigation-mobile">
     <nav v-show="show">
-      <a @click="$emit('close')" href="#home">HOME</a>
-      <a @click="$emit('close')" href="#about">O MNIE</a>
-      <a @click="$emit('close')" href="#portfolio">PORTFOLIO</a>
-      <a @click="$emit('close')" href="#oferta">OFERTA</a>
-      <a @click="$emit('close')" href="#kontakt">KONTAKT</a>
+      <a @click="$emit('close')" href="#home">Home</a>
+      <a @click="$emit('close')" href="#about">O mnie</a>
+      <a @click="$emit('close')" href="#portfolio">Portfolio</a>
+      <a @click="$emit('close')" href="#oferta">Oferta</a>
+      <a @click="$emit('close')" href="#kontakt">Kontakt</a>
     </nav>
   </transition>
 </template>

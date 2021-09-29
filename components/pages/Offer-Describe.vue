@@ -278,6 +278,7 @@ export default {
 .offerDescribe {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+  color: $color-black;
 
   display: flex;
   flex-direction: column;
@@ -321,7 +322,7 @@ export default {
       header {
         align-self: center;
         font-weight: 700;
-        font-size: clamp(1rem, 1.5vw, 4rem);
+        font-size: clamp(1.2rem, 1.5vw, 4rem);
         text-transform: uppercase;
       }
 
@@ -346,7 +347,7 @@ export default {
         width: 50%;
         font-weight: 400;
         margin-left: 1rem;
-        font-size: clamp(1rem, 1.2vw, 4rem);
+        font-size: clamp(1.1rem, 1.3vw, 4rem);
 
         @include respond(tablets) {
           width: 70%;

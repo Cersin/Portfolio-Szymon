@@ -68,6 +68,7 @@ export default {
   height: calc(var(--vh, 1vh) * 100);
   overflow: hidden;
   position: relative;
+  color: $color-black;
 
   display: flex;
   justify-content: center;
@@ -83,7 +84,7 @@ export default {
     z-index: 10;
     left: 0;
     top: 13%;
-    font-size: clamp(2rem, 3vw, 6rem);
+    font-size: clamp(2rem, 3vw, 4rem);
 
     @include respond(tablets) {
       display: none;

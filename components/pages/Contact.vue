@@ -70,6 +70,7 @@ export default {
 .contact {
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+  color: $color-black;
 
   display: grid;
   grid-template-areas:
@@ -86,7 +87,7 @@ export default {
     grid-template-areas:
                         "header photo"
                         "form photo"
-                        "arrow arrow";
+                        "arrow photo";
     grid-template-rows: 30% 1fr 10vh;
     grid-template-columns: 1fr 30vw;
     margin: 0;
@@ -96,7 +97,7 @@ export default {
     grid-area: header;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: clamp(2rem, 3vw, 6rem);
+    font-size: clamp(2rem, 3vw, 4rem);
 
     @include respond(tablets) {
       align-self: end;
@@ -264,7 +265,7 @@ export default {
     grid-area: form;
     color: $color-blue;
     text-align: center;
-    font-size: clamp(2rem, 3vw, 6rem);
+    font-size: clamp(2rem, 3vw, 4rem);
     width: 100%;
   }
 }

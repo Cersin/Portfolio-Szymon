@@ -1,10 +1,10 @@
 <template>
   <nav>
-    <a href="#home">HOME</a>
-    <a href="#about">O MNIE</a>
-    <a href="#portfolio">PORTFOLIO</a>
-    <a href="#oferta">OFERTA</a>
-    <a href="#kontakt">KONTAKT</a>
+    <a href="#home">Home</a>
+    <a href="#about">O mnie</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#oferta">Oferta</a>
+    <a href="#kontakt">Kontakt</a>
   </nav>
 </template>
 
