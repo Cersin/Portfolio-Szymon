@@ -125,7 +125,7 @@ export default {
     font-weight: 600;
     padding: 2rem 1rem;
     border-radius: 31px;
-    font-size: clamp(1rem, 3vw, 4rem);
+    font-size: clamp(1rem, 3.5vw, 3rem);
     text-align: center;
 
     @include respond(tablets) {
@@ -142,7 +142,7 @@ export default {
 
     &-2 {
       top: 50%;
-      font-size: clamp(.8rem, 3vw, 2rem);
+      font-size: clamp(.8rem, 3.5vw, 2rem);
       font-weight: 400;
       color: rgba($color-white, .9);
 
@@ -198,7 +198,7 @@ export default {
 
     &-text {
       font-weight: 400;
-      font-size: clamp(2rem, 1.5vw, 5rem);
+      font-size: clamp(2rem, 1.5vw, 2.5rem);
       width: 50%;
 
       :first-child {

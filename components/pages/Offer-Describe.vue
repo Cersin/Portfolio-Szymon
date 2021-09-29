@@ -322,7 +322,7 @@ export default {
       header {
         align-self: center;
         font-weight: 700;
-        font-size: clamp(1.2rem, 1.5vw, 4rem);
+        font-size: clamp(1.3rem, 1.5vw, 2.5rem);
         text-transform: uppercase;
       }
 
@@ -347,7 +347,7 @@ export default {
         width: 50%;
         font-weight: 400;
         margin-left: 1rem;
-        font-size: clamp(1.1rem, 1.3vw, 4rem);
+        font-size: clamp(1.2rem, 1.3vw, 2rem);
 
         @include respond(tablets) {
           width: 70%;
