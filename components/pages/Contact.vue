@@ -195,11 +195,12 @@ export default {
 
         p {
           color: $color-white;
-          font-weight: 600;
+          font-weight: 700;
           order: -1;
 
           @include respond(tablets) {
             color: $color-black;
+            font-weight: 600;
           }
         }
 
@@ -209,9 +210,11 @@ export default {
           border: none;
           border-bottom: 1px solid $color-white;
           padding-bottom: .5rem;
+          color: $color-white;
 
           @include respond(tablets) {
             border-bottom: 1px solid $color-black;
+            color: $color-black;
           }
         }
 
@@ -222,10 +225,12 @@ export default {
           border: none;
           border-bottom: 1px solid $color-white;
           margin-bottom: 2rem;
+          color: $color-white;
 
           @include respond(tablets) {
             border-bottom: 1px solid $color-black;
             min-height: 20vh;
+            color: $color-black;
 
           }
         }
