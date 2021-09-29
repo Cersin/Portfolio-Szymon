@@ -45,7 +45,6 @@ export default {
         const height = element.offsetHeight;
 
         if (window.scrollY >= top - 300 && window.scrollY < top + height - 300) {
-          element.classList.add('animate');
           if (element.id === 'about') {
             const technologies = document.getElementsByClassName('about_technologies-svg');
             for (let i = 0; i < technologies.length; i++) {
