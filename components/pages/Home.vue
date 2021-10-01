@@ -149,6 +149,10 @@ export default {
       height: 100%;
       width: 100%;
       background-image: url("static/me.png");
+      background-image: url('static/me.webp');
+      //background-image: image-set(
+      //    url("static/me.webp"),
+      //    url("static/me.png"));
       background-position: 35% 70%;
       background-size: 600px;
       background-repeat: no-repeat;

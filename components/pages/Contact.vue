@@ -3,7 +3,10 @@
     <header>zapraszam do <span>kontaktu</span></header>
     <the-socials class="contact-socials"></the-socials>
     <img src="me3-mobile.png" alt="photo of me" class="contact-photo">
-    <img src="me3.png" alt="photo of me" class="contact-photo-desktop">
+    <picture class="contact-photo-desktop">
+      <source  srcset="me3.webp" type="image/webp">
+      <img src="me3.png" alt="photo of me" class="contact-photo-desktop">
+    </picture>
     <form v-if="!isSend" class="contact_form" id="form" @submit.prevent="sendEmail">
       <div class="contact_form_box">
         <div class="contact_form_box-input">

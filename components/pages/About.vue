@@ -211,6 +211,7 @@ export default {
 
     &-img {
       background-image: url("static/me2-mobile.png");
+      background-image: url('static/me2.webp');
       width: 70%;
       height: 70%;
       background-size: cover;
@@ -221,6 +222,7 @@ export default {
         width: 50%;
         height: 70%;
         background-image: url("static/me2.png");
+        background-image: url('static/me2.webp');
       }
 
       &:after {

@@ -2,7 +2,11 @@
   <section class="offer">
     <h1 class="margin-side-mobile">OFERTA</h1>
     <div class="offer-img">
-      <img class="offer-img-photo" src="offer.jpg" alt="oferta">
+      <picture>
+        <source class="offer-img-photo" srcset="offer.webp" type="image/webp">
+        <img class="offer-img-photo" src="offer.jpg">
+      </picture>
+
     </div>
     <div class="offer_box margin-side-mobile">
       <p>Strony www i aplikacje mobilne. <br> Dopasowane do <span>Ciebie</span>.</p>
