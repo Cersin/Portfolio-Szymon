@@ -5,7 +5,7 @@
         <p class="home_description-hi">Cześć, nazywam się</p>
         <p class="home_description-name">SZYMON WÓJCIK.</p>
         <p class="home_description-developer">Jestem <span>Front-end Developerem</span>.</p>
-        <the-button class="home_description-button"><a href="#kontakt">Podejmij współpracę</a></the-button>
+        <the-button class="home_description-button"><a aria-label="Kontakt" href="#kontakt">Podejmij współpracę</a></the-button>
         <the-socials class="home_description-socials"></the-socials>
       </div>
 

@@ -10,16 +10,16 @@
     <form v-if="!isSend" class="contact_form" id="form" @submit.prevent="sendEmail">
       <div class="contact_form_box">
         <div class="contact_form_box-input">
-          <input type="text" required name="user_name">
-          <p class="imie">Imię i nazwisko</p>
+          <input  id="user" type="text" required name="user_name">
+          <label for="user" class="imie">Imię i nazwisko</label>
         </div>
         <div class="contact_form_box-input">
-          <input type="email" required name="user_email">
-          <p>E-mail</p>
+          <input id="email" type="email" required name="user_email">
+          <label for="email">E-mail</label>
         </div>
         <div class="contact_form_box-input">
-          <textarea required name="message"></textarea>
-          <p>Treść</p>
+          <textarea id="message" required name="message"></textarea>
+          <label for="message">Treść</label>
         </div>
       </div>
       <div class="contact_form-button">
@@ -197,10 +197,11 @@ export default {
         flex-direction: column;
         align-items: flex-start;
 
-        p {
+        label {
           color: $color-white;
           font-weight: 700;
           order: -1;
+          margin-bottom: .2rem;
 
           @include respond(tablets) {
             color: $color-black;

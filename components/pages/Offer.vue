@@ -4,7 +4,7 @@
     <div class="offer-img">
       <picture>
         <source class="offer-img-photo" srcset="offer.webp" type="image/webp">
-        <img class="offer-img-photo" src="offer.jpg">
+        <img class="offer-img-photo" src="offer.jpg" alt="offer">
       </picture>
 
     </div>

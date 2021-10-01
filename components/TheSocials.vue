@@ -1,7 +1,7 @@
 <template>
   <div class="socials">
     <a class="socials-icon" href="https://www.facebook.com/szymon.wojol">
-      <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square"
+      <svg aria-label="Facebook" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square"
            class="svg-inline--fa fa-facebook-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
            viewBox="0 0 448 512">
         <path
@@ -9,7 +9,7 @@
       </svg>
     </a>
 
-    <a class="socials-icon"
+    <a aria-label="Linkedin" class="socials-icon"
        href="https://pl.linkedin.com/in/szymon-w%C3%B3jcik-39192617a/pl?trk=people-guest_people_search-card">
       <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin"
            class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
@@ -19,7 +19,7 @@
       </svg>
     </a>
 
-    <a class="socials-icon" href="https://github.com/Cersin">
+    <a aria-label="Github" class="socials-icon" href="https://github.com/Cersin">
       <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github-square"
            class="svg-inline--fa fa-github-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
            viewBox="0 0 448 512">
@@ -28,7 +28,7 @@
       </svg>
     </a>
 
-    <a class="socials-icon" href="mailto:wojcik.szymon1@gmail.com">
+    <a aria-label="Email" class="socials-icon" href="mailto:wojcik.szymon1@gmail.com">
       <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope-square"
            class="svg-inline--fa fa-envelope-square fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
            viewBox="0 0 448 512">

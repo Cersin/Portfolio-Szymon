@@ -1,5 +1,5 @@
 <template>
-  <a :href="goto" class="arrow" :class="direction"></a>
+  <a aria-label="Arrow" :href="goto" class="arrow" :class="direction"></a>
 </template>
 
 <script>
