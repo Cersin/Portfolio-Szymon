@@ -9,7 +9,7 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Portfolio Frontend Szymon Wójcik' },
+      { hid: 'description', name: 'description', content: 'Szymon Wójcik Front-End' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
@@ -41,16 +41,16 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa',
+    // '@nuxtjs/pwa',
     '@nuxtjs/style-resources'
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
-  pwa: {
-    manifest: {
-      lang: 'pl'
-    }
-  },
+  // pwa: {
+  //   manifest: {
+  //     lang: 'pl'
+  //   }
+  // },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
