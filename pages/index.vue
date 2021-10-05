@@ -46,6 +46,11 @@ export default {
 
         if (window.scrollY >= top - 300 && window.scrollY < top + height - 300) {
           if (element.id === 'about') {
+            this.$nuxt.$options.head.meta.push(
+              { hid: 'description', name: 'description', content: 'O mnie - Szymon Wójcik' },
+            )
+            this.$nuxt.$options.head.title = 'elo'
+            console.log(this.$nuxt.$options.head.title);
             const technologies = document.getElementsByClassName('about_technologies-svg');
             for (let i = 0; i < technologies.length; i++) {
               setTimeout(() => {

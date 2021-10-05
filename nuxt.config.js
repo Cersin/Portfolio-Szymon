@@ -4,12 +4,12 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Szymon Wójcik Frontend Developer',
+    title: 'Szymon Wójcik: Front-End Developer',
     lang: 'pl',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Szymon Wójcik Front-End' },
+      { hid: 'description', name: 'description', content: 'Front-End - Szymon Wójcik' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [

@@ -7,7 +7,7 @@
         rozwijać się w tym kierunku, więc postanowiłem powiązać ścieżkę edukacyjna z karierą zawodowa. Efektem takich
         decyzji jest ukończenie I stopnia studiów informatycznych i rozpoczęcie magisterki na tym samym kierunku.</p>
       <p>Szczególną uwagę przywiązuje do poszerzania wiedzy i umiejętności w dziedzinie nowych technologii,
-        które pozwalają usprawniać moje projekty.
+        które pozwalają usprawniać moje projekty. Aspiruję do przyszłego full-stack developera.
         Głównie programuje w: <span>Vue</span>, <span>Nativescript</span> oraz <span>Nuxt</span>.</p>
       <p>Prócz programowania
         lubie chodzić po górach, grać w gry i oglądać F1 🙂</p>
