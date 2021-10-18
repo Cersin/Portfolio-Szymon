@@ -21,6 +21,9 @@ export default {
   css: [
     '@/styles/base/_base.scss'
   ],
+  sitemap: {
+    hostname: process.env.HOST_NAME
+  },
 
   styleResources: {
     scss: ["./styles/abstract/*.scss", "./styles/base/_animations.scss"]
@@ -42,7 +45,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/pwa
     // '@nuxtjs/pwa',
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    '@nuxtjs/sitemap'
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -54,8 +58,5 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  },
-  router: {
-    base: '/Portfolio-Szymon/'
-  },
+  }
 }
