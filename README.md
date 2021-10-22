@@ -1,6 +1,6 @@
 # Portfolio-Szymon
 
-https://cersin.github.io/Portfolio-Szymon/
+https://frontszymon.pl/
 
 ## Build Setup
 
